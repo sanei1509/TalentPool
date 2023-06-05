@@ -1,6 +1,6 @@
 # Estudio durante el TalentPool
 
-## ``Descripción`: este repositorio va a ser utilizado para poder documentar todo lo trabajado durante este tiempo, incluyendo prácticas y teroías.
+## ``Descripción``: este repositorio va a ser utilizado para poder documentar todo lo trabajado durante este tiempo, incluyendo prácticas y teroías.
 
 ## Pequeño vistazo de lo que yo quiero comenzar a profundizar:
 
