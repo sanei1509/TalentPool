@@ -1,7 +1,11 @@
 console.log("working..");
+import dotenv from "dotenv";
+
+console.log(process.env);
+
 import inquirer from "inquirer";
 // importaciones necesarias
-import { inquirerMenu, leerInput, pausa} from "./helpers/inquirer.mjs";
+import { inquirerMenu, leerInput, listarLugares, pausa} from "./helpers/inquirer.mjs";
 import Busquedas from "./models/busquedas.mjs";
 import axios from "axios";
 
@@ -25,6 +29,10 @@ const main = async () => {
             lugar = await leerInput("Ciudad:");
 
             await busquedas.ciudad(lugar);
+
+            const lugares = await busquedas.ciudad(lugar);
+            const listado = await listarLugares(lugares);
+            console.log(listado);
             //buscar los lugares
             //seleccionar el lugar
             //clima
